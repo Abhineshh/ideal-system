@@ -30,13 +30,6 @@ export default function Page() {
     "Science",
     "Engineering",
     "Mathematics",
-    "History",
-    "Astronomy",
-    "AstroPhysics",
-    "Physics",
-    "Chemistry",
-    "Biology",
-    "Geology",
   ]);
   const [currentCategory, setCurrentCategory] = useState<number>();
   const [eventsList, setEventList] = useState<Array<event>>([
@@ -93,7 +86,6 @@ export default function Page() {
               {categories.map((category, index) => {
                 return (
                   <Pressable
-                    key={index}
                     onPress={() => {
                       setCurrentCategory(index);
                     }}
